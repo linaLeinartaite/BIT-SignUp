@@ -1,0 +1,97 @@
+body,
+body * {
+    margin:0;
+    padding:0;
+    vertical-align: top;    
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 100vh; /* without min-height there is no top-margin, Why? How thus this work? */
+    background-image: linear-gradient(-90deg, rgb(20, 21, 105), rgb(182, 35, 162));
+    display: flex; /*enables a flex context for all its direct children.*/
+    align-items: center; /*aligns children in horizontal axis */
+    justify-content: center; /*aligns children in vertical axis */
+}
+
+    .main{
+        flex: 0 0 80%;  /*gives width of 80% for container independently of port-view */
+        min-height: 70vh;
+        /*min-width: 800px; I added this line because otherwise bottons get out of it*/
+        background: url("bg1.png")center/cover no-repeat;   
+        position: relative;        
+    }
+
+    .btn{
+        display: inline-block;
+        /*min-width: 150px;  I added this line because otherwise bottons get distorted*/
+        /*Is there other way to FIX it???? */
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        /* padding: 5px 20px 5px 20px; */
+        border-radius: 15px;
+        border: none;
+        color:white;
+        background: rgb(84, 30, 100);
+        box-shadow: 1px 2px rgba(0, 0, 0, 0.8);
+        outline: none;
+    }
+    
+    .signInBtn{
+        position: absolute;
+        top: 80%; 
+        left: 80%;
+    }
+
+    .logInBtn{
+        position: absolute;
+        top: 80%; 
+        left: 60%; 
+    }
+
+     .btnInputS{
+        position: absolute;
+        top: 77%; 
+        left: 20%;   
+    }
+
+    .btnInputL{
+        position: absolute;
+        top: 77%; 
+        left: 20%; 
+    }
+
+   
+
+form{
+    position: absolute; 
+    display:none;   
+    background-color: white;    
+    min-height: 80vh;
+    width: 40vw;
+     top: -8%;
+    left: 50%;
+    
+    text-align: left;
+    padding: 20px;
+}
+
+.inputT{
+    width:80%; 
+    margin:20px;       
+}
+
+p{
+    margin-left:20px;
+}
+
+h1{
+    margin: 20px;
+    color: white;
+}
+
+/* .escape{
+    float: right;
+    float: top;
+} */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Sign in</title>
+</head>
+<body>
+    
+    <div class="main">
+        <h1>Sign Up</h1>
+        <p>Privacy Policy & Terms Of Service</p>
+        
+        
+        
+        <button  class="btn logInBtn" onclick="document.getElementById('logInForm').style.display='inline-block'; document.getElementById('SignInForm').style.display='none' ">Log In
+        </button>
+        
+        <button class="btn signInBtn" onclick="document.getElementById('SignInForm').style.display='inline-block'; document.getElementById('logInForm').style.display='none'">Sign In
+        </button>
+        
+        <form class="logInForm" id="logInForm" action="./index.html">
+            <p>USER NAME</p> <input class="inputT" type="text" placeholder="User Name"> <p> <p>PASSWORD</p> <input class="inputT" type="password" placeholder="password">
+            <input class="btn btnInputL" type="submit" value="Log In">
+            <!-- <button class="btn" onclick="document.getElementById('LogInForm').style.display='none'">Cancel</button> -->
+            <!-- <button class="escape">X</button> -->
+        </form>
+        
+        <form class="signInForm" id="SignInForm" action="./index.html">
+            <p>USER NAME</p> <input class="inputT" type="text" placeholder="User Name">
+            <p> E-MAIL</p> <input class="inputT" type="email" placeholder="email">
+            <p> PASSWORD</p> <input class="inputT" type="password" placeholder="password">
+            <p>REPEAT PASSWORD</p> <input class="inputT" type="password" placeholder="password">
+            <!-- <button class="escape">X</button> -->
+            <input class="btn btnInputS" type="submit" value="Sign In">
+            <!-- <button class="btn" onclick="document.getElementById('SignInForm').style.display='none'">Cancel</button> -->
+        </form>
+    </div>
+</body>
+</html>
