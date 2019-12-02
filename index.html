@@ -7,36 +7,42 @@
     <link rel="stylesheet" href="main.css">
     <title>Sign in</title>
 </head>
-<body>
-    
+<body>   
     <div class="main">
         <h1>Sign Up</h1>
-        <p>Privacy Policy & Terms Of Service</p>
+        <p class="policy">Privacy Policy & Terms Of Service</p>
         
         
         
-        <button  class="btn logInBtn" onclick="document.getElementById('logInForm').style.display='inline-block'; document.getElementById('SignInForm').style.display='none' ">Log In
+        <button  class="btn logInBtn" onclick="document.getElementById('logInForm').style.display='inline-block'; document.getElementById('signInForm').style.display='none' ">Log In
         </button>
         
-        <button class="btn signInBtn" onclick="document.getElementById('SignInForm').style.display='inline-block'; document.getElementById('logInForm').style.display='none'">Sign In
+        <button class="btn signInBtn" onclick="document.getElementById('signInForm').style.display='inline-block'; document.getElementById('logInForm').style.display='none'">Sign In
         </button>
         
-        <form class="logInForm" id="logInForm" action="./index.html">
-            <p>USER NAME</p> <input class="inputT" type="text" placeholder="User Name"> <p> <p>PASSWORD</p> <input class="inputT" type="password" placeholder="password">
-            <input class="btn btnInputL" type="submit" value="Log In">
-            <!-- <button class="btn" onclick="document.getElementById('LogInForm').style.display='none'">Cancel</button> -->
-            <!-- <button class="escape">X</button> -->
+        <form class="logInForm" id="logInForm" method="get" action="./index.html">
+            <span class='closeBtn closeBtnL'>&times;</span> <!--&times; gives x simbol-->
+            <div>
+            <label>USER NAME</label> <input class="inputT" type="text" placeholder="User Name">  <label>PASSWORD</label> <input class="inputT" type="password" placeholder="password">
+
+            <input class="btn btnInputL" type="submit" value="Log In"><br>
+            <span class="btn btnLastS"> or <span id="btnLastS">Sign Up </span> </span>
+        </div>
         </form>
         
-        <form class="signInForm" id="SignInForm" action="./index.html">
-            <p>USER NAME</p> <input class="inputT" type="text" placeholder="User Name">
-            <p> E-MAIL</p> <input class="inputT" type="email" placeholder="email">
-            <p> PASSWORD</p> <input class="inputT" type="password" placeholder="password">
-            <p>REPEAT PASSWORD</p> <input class="inputT" type="password" placeholder="password">
-            <!-- <button class="escape">X</button> -->
-            <input class="btn btnInputS" type="submit" value="Sign In">
-            <!-- <button class="btn" onclick="document.getElementById('SignInForm').style.display='none'">Cancel</button> -->
+        <form class="signInForm" id="signInForm" method="get" action="./index.html">       
+            <span class='closeBtn closeBtnS'>&times;</span> <!--&times; gives x simbol-->
+        <div>
+            <label>USER NAME</label> <input class="inputT" type="text" placeholder="User Name">
+            <label>E-MAIL</label> <input class="inputT" type="email" placeholder="email">
+            <label>PASSWORD</label> <input class="inputT" type="password" placeholder="password">
+            <label>REPEAT PASSWORD</label> <input class="inputT" type="password" placeholder="password">
+           
+            <input class="btn btnInputS" type="submit" value="Get Started"><br>
+            <span class="btn btnLastL"> or <span id="btnLastL">Log In </span> </span>
+        </div>
         </form>
     </div>
+    <script src='script.js'></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ body{
     background-image: linear-gradient(-90deg, rgb(20, 21, 105), rgb(182, 35, 162));
     display: flex; /*enables a flex context for all its direct children.*/
     align-items: center; /*aligns children in horizontal axis */
-    justify-content: center; /*aligns children in vertical axis */
+    justify-content: center; /*aligns children in vertical axis */   
 }
 
     .main{
@@ -23,7 +23,7 @@ body{
         position: relative;        
     }
 
-    .btn{
+    .logInBtn, .signInBtn{
         display: inline-block;
         /*min-width: 150px;  I added this line because otherwise bottons get distorted*/
         /*Is there other way to FIX it???? */
@@ -34,7 +34,7 @@ body{
         border: none;
         color:white;
         background: rgb(84, 30, 100);
-        box-shadow: 1px 2px rgba(0, 0, 0, 0.8);
+        box-shadow: 1px 2px rgba(255, 255, 255, 0.5);
         outline: none;
     }
     
@@ -50,48 +50,110 @@ body{
         left: 60%; 
     }
 
-     .btnInputS{
-        position: absolute;
-        top: 77%; 
-        left: 20%;   
+    form{
+        /* position: absolute;  */
+        display:none;   
+        background-color: white;    
+        /* min-height: 80vh; */
+        width: 40vw;
+         /* top: -8%; */
+        /* left: 50%; */
+        text-align: left;
+        padding: 20px; 
     }
 
-    .btnInputL{
-        position: absolute;
-        top: 77%; 
-        left: 20%; 
+    .signInForm{
+        position: absolute;         
+        min-height: 80vh;
+        top: -8%;
+        left: 50%;       
     }
 
-   
+    .logInForm{
+        position: absolute;         
+        min-height: 70vh;
+        top: 0%;
+        left: 50%;       
+    }
 
-form{
-    position: absolute; 
-    display:none;   
-    background-color: white;    
-    min-height: 80vh;
-    width: 40vw;
-     top: -8%;
-    left: 50%;
+
+    h1{
+        margin: 20px;
+        color: white;
+        font-weight: normal;
+        position: absolute;
+        left:5%;
+        top:10%;
+    }
     
-    text-align: left;
-    padding: 20px;
-}
+    .policy{
+        color: white;
+        position: absolute;
+        left:5%;
+        top:90%;
+    }
 
-.inputT{
-    width:80%; 
-    margin:20px;       
-}
+        div{
+           padding-top:50px; 
+        }
 
-p{
-    margin-left:20px;
-}
+            .btnInputS,
+            .btnInputL{
+                position: absolute;
+                top: 80%; 
+                left: 15%;
+                color: white;   
+                background-color: #0063DA;
+                border: none;
+                padding: 0.5rem 3rem 0.5rem 3rem;
+                border-radius: 20px;
+                font-size: 1rem;
+            }
 
-h1{
-    margin: 20px;
-    color: white;
-}
+            .btnLastS,
+            .btnLastL{
+                position: absolute;
+                top: 81%; 
+                left: 50%;       
+            }
 
-/* .escape{
-    float: right;
-    float: top;
-} */
+                #btnLastS,
+                #btnLastL{
+                    color: #0063DA;  
+                    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                    font-size: 1rem;
+                    font-weight: bolder;  
+                }
+
+            .btn {
+                cursor:pointer;
+            }
+
+
+
+        .inputT{
+            width:80%; 
+            margin:20px;       
+        }
+
+        label{
+            margin-left:20px;
+        }
+
+
+        .closeBtn{
+            color: grey;
+            float: right;
+            font-size:30px;
+            z-index:1;          
+        }
+
+        .closeBtn:hover{
+            color: black; 
+            cursor: pointer;   
+            
+        }
+
+        .closeBtn:active{
+            font-weight:bold;   
+        }
