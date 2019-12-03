@@ -6,8 +6,8 @@ specified class name, so you have to have index number even if there is only one
 var formS = document.getElementById("signInForm");
 var formL = document.getElementById("logInForm");
 
-var btnLastS = document.getElementsByClassName("btnLastS")[0];
-var btnLastL = document.getElementsByClassName("btnLastL")[0];
+var btnLastS = document.getElementById("btnLastS");
+var btnLastL = document.getElementById("btnLastL");
 
 closeBtnS.addEventListener("click", closeFormS);
 closeBtnL.addEventListener("click", closeFormL);

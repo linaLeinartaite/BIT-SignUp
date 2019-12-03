@@ -10,9 +10,11 @@
 <body>   
     <div class="main">
         <h1>Sign Up</h1>
-        <p class="policy">Privacy Policy & Terms Of Service</p>
-        
-        
+        <div class="policy"> 
+            <a href="">Privacy Policy</a>
+            <span> &</span> 
+            <a href="#">Terms Of Service</a>
+        </div>
         
         <button  class="btn logInBtn" onclick="document.getElementById('logInForm').style.display='inline-block'; document.getElementById('signInForm').style.display='none' ">Log In
         </button>
@@ -23,24 +25,35 @@
         <form class="logInForm" id="logInForm" method="get" action="./index.html">
             <span class='closeBtn closeBtnL'>&times;</span> <!--&times; gives x simbol-->
             <div>
-            <label>USER NAME</label> <input class="inputT" type="text" placeholder="User Name">  <label>PASSWORD</label> <input class="inputT" type="password" placeholder="password">
-
-            <input class="btn btnInputL" type="submit" value="Log In"><br>
-            <span class="btn btnLastS"> or <span id="btnLastS">Sign Up </span> </span>
-        </div>
+                <label>USER NAME</label> <input class="inputT" type="text" placeholder="User Name">  
+                <label>PASSWORD</label> <input class="inputT" type="Password" placeholder="password">
+                
+                <input class="btn btnInputL" type="submit" value="Log In">
+                <span class="btn btnLastS"> 
+                    <span>or</span>
+                    <a id="btnLastS">Sign Up </a>
+                </span>
+            </div>
         </form>
         
         <form class="signInForm" id="signInForm" method="get" action="./index.html">       
             <span class='closeBtn closeBtnS'>&times;</span> <!--&times; gives x simbol-->
-        <div>
-            <label>USER NAME</label> <input class="inputT" type="text" placeholder="User Name">
-            <label>E-MAIL</label> <input class="inputT" type="email" placeholder="email">
-            <label>PASSWORD</label> <input class="inputT" type="password" placeholder="password">
-            <label>REPEAT PASSWORD</label> <input class="inputT" type="password" placeholder="password">
-           
-            <input class="btn btnInputS" type="submit" value="Get Started"><br>
-            <span class="btn btnLastL"> or <span id="btnLastL">Log In </span> </span>
-        </div>
+            <div>
+                <label>USER NAME</label> 
+                <input class="inputT" type="text" placeholder="User Name">
+                <label>E-MAIL</label> 
+                <input class="inputT" type="email" placeholder="email">
+                <label>PASSWORD</label> 
+                <input class="inputT" type="Password" placeholder="Password">
+                <label>REPEAT PASSWORD</label> 
+                <input class="inputT" type="Password" placeholder="Password">
+                
+                <input class="btn btnInputS" type="submit" value="Get Started">
+                <span class="btn btnLastL"> 
+                    <span>or</span>
+                    <a id="btnLastL">Log In </a>            
+                </span>
+            </div>
         </form>
     </div>
     <script src='script.js'></script>
