@@ -1,4 +1,4 @@
-# BIT-task3-v1
+# BIT-task3
 Design: SignUp
 
 Site is published at https://linaleinartaite.github.io/BIT-task3-v1/
